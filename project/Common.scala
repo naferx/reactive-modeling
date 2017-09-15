@@ -18,8 +18,6 @@ object Common {
   val commonSettings =  Seq(
     crossScalaVersions := Version.scalaVersions,
     scalaVersion := Version.scalaVersions.head,
-    organizationName := "Suramericana",
-    organization := "co.com.suramasivos",
     version := "1.0",
 
     startYear := Some(2017),
