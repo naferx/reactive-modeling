@@ -37,6 +37,7 @@ object Common {
     javacOptions ++= Seq("-source", "1.8", "-target", "1.8"),
     unmanagedSourceDirectories.in(Compile) := Seq(scalaSource.in(Compile).value),
     unmanagedSourceDirectories.in(Test) := Seq(scalaSource.in(Test).value),
+
     shellPrompt in ThisBuild := { state =>
       val project = Project.extract(state).currentRef.project
       s"[$project]> "
